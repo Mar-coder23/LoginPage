@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", serif;
 }
 #main{
     height: 100vh;
     max-width: 100%;
-    background-color: rgb(30, 30, 109);
+    background: linear-gradient(180deg, hsla(217, 100%, 50%, 1) 0%, rgb(42, 181, 245) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,24 +15,27 @@
 #boxContainer{
     height: 30em;
     width: 26em;
-    background-color: white;
+    background: linear-gradient(180deg, hsla(217, 100%, 50%, 1) 0%, rgb(42, 181, 245) 100%);
     justify-content: center;
     align-items: center;
-    align-content: center;  
+    align-content: center; 
+    box-shadow: 0px 0px 14px 1px rgb(0, 0, 0);
 }
 #boxContent{
     display: flex;
     align-items: center;
     align-content: center;
     flex-direction: column;
-    gap: 2em;
+    gap: 1.8em;
 }
 .btnIcon{
     height: 1.2em;
     padding-right: .4em;
+ 
 }
 .titleLine{
     font-size: 1em;
+    color: white;
 }
 input{
     width: 26em;
@@ -42,15 +45,19 @@ input{
     font-size: .8em;
     margin-top: .4em;
     margin-bottom: .6em;
+    background-color: rgba(166, 206, 252, 0.527);
+    border: none;
+    border-radius: 3px;
+    color: white;
 }
 .formEntryLine .createBtn{
     margin-top: .6em;
-    padding: .8em .8em;
+    padding: .6em .8em;
     font-size: 1.2em;
     border-radius: 5px;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: rgb(5, 122, 255);
     cursor: pointer;
     transition: .1s;
     margin-top: 1em;
@@ -68,16 +75,33 @@ input{
     margin: .4em;
     border-radius: 5px;
     border: none;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: white;
+    color: rgb(5, 122, 255);
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    transition: .1s;
+}
+.bottomBtns button:hover{
+    background-color: rgb(39, 39, 39);
 }
 span{
     height: .9em;
+    text-align: center;
 }
 .loginDont{
     padding-right: .25em;
+    color: white;
+}
+label{
+    color: white;
+}
+.loginLine{
+    color: white;
+    text-align: center;
+    padding-right: 1.6em;
+}
+a{
+    color: rgb(12, 68, 255);
 }
