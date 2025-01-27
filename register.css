@@ -26,12 +26,7 @@
     align-items: center;
     align-content: center;
     flex-direction: column;
-    gap: 1.8em;
-}
-.btnIcon{
-    height: 1.2em;
-    padding-right: .4em;
- 
+    gap: 1em;
 }
 .titleLine{
     font-size: 1em;
@@ -43,12 +38,18 @@ input{
     padding-left: .8em;
     outline: none;
     font-size: .8em;
-    margin-top: .4em;
+    margin-top: .5em;
     margin-bottom: .6em;
     background-color: rgba(166, 206, 252, 0.527);
     border: none;
     border-radius: 3px;
     color: white;
+}
+.usernameInput{
+    margin-bottom: 1.4em;
+}
+.passwordInput{
+    margin-bottom: 1em;
 }
 .formEntryLine .createBtn{
     margin-top: .6em;
@@ -69,26 +70,37 @@ input{
 .formEntryLine .createBtn:hover{
     background-color: rgb(39, 39, 39);
 }
+hr{
+    width: 150px;
+    height: 1px;
+    position: relative;
+    margin: .4em;
+}
+.orsignup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.orsignup p{
+    color: white;
+}
 .bottomBtns button{
     font-size: 1em;
-    padding: .4em 1.8em;
-    margin: .4em;
+    padding: .8em 2.4em;
+    margin: .5em;
     border-radius: 5px;
     border: none;
     background-color: white;
     color: rgb(5, 122, 255);
     cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    width: 20.8em;
+    height: 6;
+    
     transition: .1s;
 }
 .bottomBtns button:hover{
     background-color: rgb(39, 39, 39);
-}
-span{
-    height: .9em;
-    text-align: center;
 }
 .loginDont{
     padding-right: .25em;
@@ -104,4 +116,7 @@ label{
 }
 a{
     color: rgb(12, 68, 255);
+}
+i{
+    padding-right: .4em;
 }

@@ -20,6 +20,8 @@
 // Create Btn
 const createBtn = document.querySelector('.createBtn');
 
+
+// add event listener to button that will trigger the event. 
 createBtn.addEventListener('click', function(event){
     event.preventDefault();
     const email = document.querySelector('.usernameInput').value;
@@ -27,6 +29,8 @@ createBtn.addEventListener('click', function(event){
     const auth = getAuth();
 
     createUserWithEmailAndPassword(auth, email, password)
+
+    // this to show an alert and to open the window after it logged or registered in
     .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
@@ -34,6 +38,7 @@ createBtn.addEventListener('click', function(event){
         window.location.href = "grand.html";
         // ...
     })
+    // This is code to catch an error and display an alert message for it.
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
